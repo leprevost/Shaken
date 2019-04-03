@@ -1,0 +1,50 @@
+<div class="logo-container">
+  <img class="logosignup" width="112" height="112" src="assets/imgs/inv-cocktail-icon-pink.png">
+  <h2 class="logoname-signup"><span style="color:#EC407A; font-size: 28px;">S</span>haken</h2>
+</div>
+
+<ion-content class="contentstylesignup">
+  <ion-list padding>
+    <ion-item class="rounded">
+        <ion-icon name="md-camera" item-left primary></ion-icon>
+        <label class="uploadImage" for="myFileInput">Upload Avatar</label>
+      <input #fileInput type="file" accept="image/*" id="myFileInput" (change)="imageSelected(fileInput.files)">
+    </ion-item>
+
+    <ion-item class="rounded">
+        <ion-icon name="md-mail" item-left primary></ion-icon>
+        <ion-input type="Email" placeholder="Email"></ion-input>
+    </ion-item>
+
+    <ion-item class="rounded">
+        <ion-icon name="md-person" item-left primary></ion-icon>
+        <ion-input type="text" placeholder="Username" (change)="newName()" [(ngModel)]="uname"></ion-input>
+    </ion-item>
+
+    <ion-item class="rounded">
+        <ion-label stacked>Enter Date of Birth</ion-label>
+        <ion-icon name="md-calendar" item-left primary></ion-icon>
+          <ion-datetime class="dob" type="date" placeholder="Enter Date of Birth" name="dob" [(ngModel)]="birthdate"  
+          displayFormat="DD-MM-YYYY" (ionChange)="saveDate()"></ion-datetime>
+    </ion-item>
+
+    <ion-item class="rounded">
+        <ion-icon name="md-lock" item-left primary></ion-icon>
+        <ion-input type="password" placeholder="Password" (change)="savePwd()"></ion-input>
+    </ion-item>
+
+    <ion-item class="transparent">
+        <ion-label style="font-size:14px">I consent to email updates</ion-label>
+        <ion-toggle [(ngModel)]="isToggled"  (ionChange)="saveNot()" clear></ion-toggle>
+    </ion-item>
+
+    <div class="position">
+        <button ion-button medium color="white" [(disabled)]="!isToggled  " (click)="logpageshow()" block outline>Sign up</button>
+        <button ion-button class="bottomtext"
+        (click)="logpageshow()" style="text-transform: none;"
+        block clear>Already have an account? <b>&nbsp;Sign in</b> </button>
+    </div>
+
+  </ion-list>
+  
+</ion-content>

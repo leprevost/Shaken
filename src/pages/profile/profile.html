@@ -1,0 +1,29 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>profile</ion-title>
+    <ion-buttons end>
+        <button ion-button icon-only (click)="closemodal()">
+          <ion-icon class="buttonstyle" name="md-close"></ion-icon>
+        </button>
+      </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <h3 class="visitHeader"><u>My Name:</u></h3> 
+    <h6>{{uname}}</h6>
+  <br>
+  <h3 class="visitHeader"><u>My Birthday:</u></h3>
+  <ion-datetime  type="date" name="dob" [(ngModel)]="birthdate" displayFormat="DD-MM-YYYY">
+  </ion-datetime>
+  <h3 class="visitHeader"><u>Consent to email updates?</u></h3> 
+    <ion-item class="transparent">
+        <ion-label style="font-size:14px">Yes, I consent.</ion-label>
+        <ion-toggle [(ngModel)]="isToggled" clear></ion-toggle>
+    </ion-item>
+  <br>
+  
+</ion-content>

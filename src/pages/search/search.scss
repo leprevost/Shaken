@@ -1,0 +1,32 @@
+page-search {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.notification-btn{
+    position: relative;
+    width: 42px;
+    top:1px;
+    right: 1px;
+    font-size: 28px;
+    color: white;
+}
+
+
+button {
+    display: inline-block;
+    float: right;
+}
+.titlestyle{
+    color: #EC70A4;
+    font-weight: bold;
+}
+
+.bar-button-default-md {
+    color: #fff;
+} 
+.data{
+    color: white!important;
+    text-align: left;
+    padding-left:5vw;
+}

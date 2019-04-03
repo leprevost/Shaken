@@ -1,0 +1,8 @@
+{
+  "name": "Shaken",
+  "app_id": "au.edu.griffith.Shaken",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}

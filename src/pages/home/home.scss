@@ -1,0 +1,155 @@
+page-home {
+
+}
+
+h2{
+  text-align: right;
+  top: 15vh;
+  right:3vw;
+  position: fixed;
+}
+
+ion-navbar{
+  border-top:20%;
+}
+ion-grid {
+  height: 100%;
+
+  ion-row {
+    height: 10vh;
+  }
+}
+.totalbox{
+  position: absolute;
+  box-sizing: border-box;
+  background-color: #212121;
+  border-radius: 12%;
+  top:24%;
+  z-index:100;
+  width: 61%;
+  height: 12%;
+  right: 1%;
+  padding: 10px;
+}
+.avatar{
+  height: 120px; 
+  width: 120px;
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+}
+.totaltextstyle{
+  color: white;
+}
+.titleadd{
+  text-align: center;
+  font-size: 13px; 
+}
+.addtextstyle{
+  height: 100%;
+  color: white;
+  font-size: 12px;
+  float: right;
+}
+.addiconstyle{
+  color: #EC407A;
+  font-size: 28px!important;
+}
+.totaliconstyle{
+  color: #EC407A;
+}
+.totaliconstyle-img{
+  display: inline;
+}
+.titletotal{
+  font-size: 22px;
+  color: white;
+}
+
+.itemcontainer{
+  padding: initial;
+  background-color: #212121;
+  box-sizing: border-box;
+  width: 105%;
+  height: 115%;
+  border-radius: 12%;
+}
+.trash{
+  color: #EC407A; 
+  left: 0%;
+  background: transparent;
+}
+
+.edit{
+  color: #EC407A; 
+  display: inline;
+  background: transparent;
+}
+
+.likes{
+  font-size: 20px;
+  color: #EC407A; 
+  display: inline;
+}
+
+.likecolor{
+  color: white;
+  display: inline;
+}
+
+
+.boxstyle{
+  background-color: #212121;
+  width: 110%;
+  height: 16%;
+  margin: -5vw;
+}
+
+i {
+  background: rgba(33,33,33, 1);
+  font-size: 40px;
+  text-align: center;
+  margin-right: 10px;
+  border-radius: 50%;
+  display: inline-block;
+  line-height: 125px;
+  width: 125px;
+  height: 125px;
+  border: 4px solid #191919;
+}
+.logocontainer{
+  position:relative;
+}
+
+img {
+  display:block;
+}
+.s-logoname{
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  top: 30%;
+  left: 2%;
+  right: 25%;
+  color: #EC407A;
+}
+.logoname{
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  top: 30%;
+  left: 27%;
+  right: 25%;
+  color: white;
+}
+
+.buttonstyle{
+  color: #EC407A;
+}
+
+.gridstyle{
+  position: relative;
+  top: 20%;
+  text-align: center;
+}

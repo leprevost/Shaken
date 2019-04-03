@@ -1,0 +1,74 @@
+page-login {
+  background-color: #191919;
+
+  ion-content{
+    background-color: #212121;
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    padding-bottom: 5px;
+  }
+  .toolbar-background{
+    background-color: #fff;
+  }
+  .header .toolbar-background{
+    border-color: #EC14BE;
+    background-color: #212121;
+  }
+}
+
+.contentstylelogin{
+  text-align: center;
+  position: absolute;
+  top: 40%;
+}
+
+.button{
+  padding: 24px;
+}
+
+
+.position{
+  padding: 16px;
+  width: 95vw;
+  font-size: 16px;
+}
+
+
+.bottomtext{
+  position: static;
+  right: 0;
+  left: 0;
+  text-align: center;
+  top:60%;
+}
+
+.rounded{
+  width: 100%;
+  height: 30px;
+  margin-bottom: 20px;
+  background: none;
+}
+
+.logologin{
+  position: absolute;
+  top: 12%;
+  left: 32%;
+  right: 0;
+}
+
+.alertstyle{
+  > div {
+    background: #212121 !important;
+    color: white;
+    overflow-y: hidden;
+  }
+}
+
+.helpfab{
+  background-color: transparent;
+  box-shadow: none;
+  position: fixed;
+  top: 0%;
+  left: 85%;
+}

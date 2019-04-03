@@ -1,0 +1,31 @@
+<div class="logo-container">
+  <img class="logologin" width="112" height="112" src="assets/imgs/inv-cocktail-icon-pink.png">
+  <h2 class="logoname"><span style="color:#EC407A; font-size: 28px;">S</span>haken</h2>
+</div>
+<ion-fab>
+  <button class="helpfab" (click)="contanctpagemodal()" ion-fab icon-only clear>
+    <ion-icon style="color: #EC407A;" name="md-help"></ion-icon>
+  </button>
+</ion-fab>
+
+<ion-content class="contentstylelogin" >
+  <ion-list inset>
+
+    <ion-item class="rounded">
+      <ion-icon name="md-person" item-left primary></ion-icon>
+      <ion-input type="text" placeholder="Username" >{{li.uname}}</ion-input>
+    </ion-item>
+
+    <ion-item class="rounded">
+      <ion-icon name="md-lock" item-left primary></ion-icon>
+      <ion-input type="password" placeholder="Password" >{{li.password}}</ion-input>
+    </ion-item>
+
+    <div class="position">
+      <button ion-button medium color="white" (click)="tabspageshow()" block outline>Sign in</button>
+      <button ion-button class="bottomtext" (click)="signpageshow()" style="text-transform: none;"
+      block clear>Don't have an account? <b>&nbsp;Join Now</b> </button>
+    </div>
+
+  </ion-list>
+</ion-content>

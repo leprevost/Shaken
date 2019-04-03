@@ -1,0 +1,131 @@
+<ion-header>
+  <ion-navbar>
+  <ion-title>
+      My Profile
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only (click)="popovermenu($event)">
+        <ion-icon class="buttonstyle" name="md-more"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+<ion-item>
+
+</ion-item>
+<ion-content padding>
+  <div class="boxstyle">
+    <div style="display: inline;">
+    <h2 style="display: inline;">Hello,</h2> <h2 style="color: #ec70a4; display: inline;">{{uname}}</h2>
+    </div>
+    <hr />
+    <i>
+        <img class="avatar" src="{{imageFile}}" >
+    </i>
+  </div>
+  </ion-content>
+
+    <div class="totalbox">
+      <span class="titletotal">Total:</span>
+      <br>  
+      <ion-icon class="totaliconstyle" name="md-heart"></ion-icon><span class="totaltextstyle">&nbsp;48 </span>
+      <ion-icon class="totaliconstyle" name="md-star"></ion-icon><span class="totaltextstyle">&nbsp;92 </span>
+      <img class="totaliconstyle-img" width="18" height="18" src="assets/imgs/inv-cocktail-icon-pink-inv.png">
+      <span class="totaltextstyle">5</span>
+ 
+    </div>
+
+<ion-content class="gridstyle" padding>
+<br>
+    <ion-grid>
+        <ion-row justify-content-start>
+          <ion-col style="margin-left: -5%;">
+            <div class="itemcontainer">
+              Bloody Mary
+              <br>
+              <br>
+              <button class="trash" icon-only clear>
+                <ion-icon  name="md-trash"></ion-icon>
+              </button>
+              <button class="edit" icon-only clear>
+                <ion-icon name="md-build"></ion-icon>
+              </button>
+              <ion-icon class="likes" name="md-star">
+              </ion-icon>
+              <span class="likecolor">12</span>
+            </div>
+          </ion-col>
+          <ion-col>
+            <div class="itemcontainer">
+                Screwdriver
+                <br>
+                <br>
+                <button class="trash" icon-only clear>
+                  <ion-icon  name="md-trash"></ion-icon>
+                </button>
+                <button class="edit" icon-only clear>
+                  <ion-icon name="md-build"></ion-icon>
+                </button>
+                <ion-icon class="likes" name="md-star">
+                </ion-icon>
+                <span class="likecolor">40</span>
+            </div>
+          </ion-col>
+        </ion-row>
+        <ion-row justify-content-start>
+          <ion-col style="margin-left: -5%;">
+            <div class="itemcontainer">
+                Venom
+                <br>
+                <br>
+                <button class="trash" icon-only clear>
+                  <ion-icon  name="md-trash"></ion-icon>
+                </button>
+                <button class="edit" icon-only clear>
+                  <ion-icon name="md-build"></ion-icon>
+                </button>
+                <ion-icon class="likes" name="md-star">
+                </ion-icon>
+                <span class="likecolor">22</span>
+              </div>
+          </ion-col>
+          <ion-col>
+            <div class="itemcontainer">
+                Cosmopolitan
+                <br>
+                <br>
+                <button class="trash" icon-only clear>
+                  <ion-icon  name="md-trash"></ion-icon>
+                </button>
+                <button class="edit" icon-only clear>
+                  <ion-icon name="md-build"></ion-icon>
+                </button>
+                <ion-icon class="likes" name="md-star">
+                </ion-icon>
+                <span class="likecolor">2</span>
+              </div>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col style="margin-left: -5%;">
+                <div class="itemcontainer">
+                    Mojito
+                    <br>
+                    <br>
+                    <button class="trash" icon-only clear>
+                      <ion-icon  name="md-trash"></ion-icon>
+                    </button>
+                    <button class="edit" icon-only clear>
+                      <ion-icon name="md-build"></ion-icon>
+                    </button>
+                    <ion-icon class="likes" name="md-star">
+                    </ion-icon>
+                    <span class="likecolor">14</span>
+                  </div>
+              </ion-col>
+              <ion-col>
+              </ion-col>
+        </ion-row>
+      </ion-grid>
+      
+</ion-content>

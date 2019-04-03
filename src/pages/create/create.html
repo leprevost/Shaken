@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Create</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+      <ion-fab>
+        <button class="addfab" (click)="confirmbtn()" ion-fab icon-only clear>
+          <ion-icon class="addiconfab" name="md-checkmark-circle-outline"></ion-icon>
+        </button>
+      </ion-fab>
+        <ion-list>
+          <input #fileInput type="file" accept="image/*" (change)="imageSelected(fileInput.files)" multiple> 
+          <h3 class="header">Title:
+          <ion-input  class="titlestyle" type="text" placeholder="Enter Cocktail Title" [(ngModel)]="title" clearInput></ion-input>
+          </h3>
+      </ion-list>
+        <h3 class="header">Ingredients:</h3>
+          <ion-input class="inputstyle" type="text" placeholder="Enter ingredient" [(ngModel)]="ingredient"></ion-input>
+        <h3 class="header">Method:</h3>
+          <ion-input class="inputstyle" type="text" placeholder="Enter method"  [(ngModel)]="method"></ion-input>
+        <h3 class="header">Serves:</h3>
+          <ion-input class="inputstyle" type="number" max="20" min="1" value="1" placeholder="Enter number" [(ngModel)]="serves"></ion-input>
+
+  </ion-content>

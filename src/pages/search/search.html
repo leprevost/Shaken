@@ -1,0 +1,43 @@
+<ion-header>
+    <ion-navbar>
+      <ion-title>Search</ion-title>
+      <ion-buttons end>
+          <button ion-button icon-only (click)="createpagemodal()"> Add
+            <ion-icon class="buttonstyle" name="md-add"></ion-icon>
+          </button>
+        </ion-buttons>
+    </ion-navbar>
+  <ion-toolbar color="dark">
+      <ion-searchbar [(ngModel)]="searchTerm" (ionInput)="setFilteredItems()"></ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+<!-- List of drinks made by the user-->
+<ion-card *ngFor="let cocktail of cocktails; index as i">   
+  <ion-card-header class="titlestyle">
+    {{cocktail.title}}
+    <button ion-button color="danger" (click)="deleteItem(i)">Delete
+        <ion-icon name="md-trash"></ion-icon>
+    </button>
+  </ion-card-header>
+
+  <ion-card-content>  
+    <h3 class="header">Ingredients:</h3>
+      <p class="data" >{{cocktail.ingredient}}</p>
+    <h3 class="header">Method:</h3>
+      <p class="data" >{{cocktail.method}}</p>
+    <button class="notification-btn" (click)="toggle()" ion-button clear>6  
+      <ion-icon color="primary" name="md-star"></ion-icon>
+    </button>    
+
+    <button class="notification-btn" ion-button clear>3         
+      <ion-icon color="primary" name="md-heart-outline"></ion-icon>
+    </button>
+
+    <h3 class="header">Serves:</h3>
+      <p class="data" >{{cocktail.serves}}</p>
+  </ion-card-content>  
+</ion-card>
+
+</ion-content>

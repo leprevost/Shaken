@@ -1,0 +1,69 @@
+page-create {
+}
+
+.createalert{
+    > div {
+    background: #212121 !important;
+    color: white;
+    }
+}
+
+.pinktext{
+    color: #EC407A;
+    font-weight:bold;
+}
+.addfab{
+    background-color: transparent;
+    box-shadow: none;
+    position: fixed;
+    top: 7%;
+    left: 85%;
+}
+.addiconfab{
+    color: #EC407A;
+    font-size: 48px!important;
+}
+.xfab{
+    background-color: transparent;
+    box-shadow: none;
+    position: fixed;
+    top: 5%;
+    left: -2%;
+    
+}
+.xiconfab{
+    color: #EC407A;
+    font-size: 48px!important;
+}
+.titlestyle{
+    background-color: #212121;
+    color: #EC70A4;
+}
+
+.cardfav{
+    position: static;
+    background-color: #212121;
+    color: white;
+    word-wrap: break-word;
+    height: 100%;
+    overflow:hidden;
+}
+
+//html {
+//    overflow: scroll;
+//    overflow-x: hidden;
+//}
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+
+.inputstyle{ 
+    background-color: #212121;
+    color: white;
+}
+.header{
+    color: white !important;
+    text-align: left;
+    text-transform: uppercase;
+}

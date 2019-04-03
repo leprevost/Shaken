@@ -1,0 +1,84 @@
+page-signup {
+  background-color: #191919;
+
+  ion-content{
+    background-color: #212121;
+    color: #fff;
+  } 
+  .toolbar-background{
+    background-color: #fff;
+  }
+  .header .toolbar-background{
+    border-color: #EC14BE;
+    background-color: #212121;
+  }
+}
+#myFileInput{
+  position: absolute;
+  opacity: 0;
+}
+.uploadImage{
+  color: #EC407A;
+}
+.contentstylesignup{
+  text-align: center;
+  position: fixed;
+  top: 27%;
+}
+
+.button{
+  padding: 24px;
+}
+
+.transparent{
+  background-color: rgba($color: #000000, $alpha: 0)
+}
+.position{
+  padding: 16px;
+  width: 95vw;
+  font-size: 16px;
+}
+
+.dob{
+  color: white;
+}
+
+.bottomtext{
+  position: static;
+  right: 0;
+  left: 0;
+  text-align: center;
+  top:60%;
+}
+.rounded{
+  width: 100%;
+  height: 30px;
+  margin-bottom: 20px;
+  background: none;
+  color: white;
+}
+
+.logocontainer{
+  top:0;
+  position:relative;
+}
+
+img {
+  display:block;
+}
+.logoname-signup{
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  top: 18%;
+  left: 27%;
+  right: 25%;
+  color: white;
+}
+
+.logosignup{
+  position: fixed;
+  top: 1%;
+  left: 32%;
+  right: 0;
+}
